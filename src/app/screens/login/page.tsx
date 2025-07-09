@@ -60,7 +60,7 @@ const Login = () => {
         </button>
       </form>
       {error && <p>{error}</p>}
-      <p>Don't have an account? <a href="/screens/Signup">Register here</a></p>
+      <p>Do not have an account? <a href="/screens/Signup">Register here</a></p>
     </div>
   );
 };
