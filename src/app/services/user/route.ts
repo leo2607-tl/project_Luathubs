@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import { auth } from "../../firebase/client"; 
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, User } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, User } from "firebase/auth";
 
 export async function POST(req: Request) {
-  const { email, password } = await req.json();
+  const { email, password } = await req.json(); 
 
   try {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
@@ -17,7 +17,7 @@ export async function POST(req: Request) {
 }
 
 export async function POST_login(req: Request) {
-  const { email, password } = await req.json();
+  const { email, password } = await req.json(); 
 
   try {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
