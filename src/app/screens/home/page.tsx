@@ -26,7 +26,7 @@ const Home = () => {
       <h1 className="text-3xl font-semibold text-blue-600">
         Welcome, {user ? user.email : "Guest"}
       </h1>
-      <p className="mt-2 text-lg text-gray-700">You're logged in!</p>
+      <p className="mt-2 text-lg text-gray-700">Success</p>
       {user && (
         <button
           onClick={() => auth.signOut()}
